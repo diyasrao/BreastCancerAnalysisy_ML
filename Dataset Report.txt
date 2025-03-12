@@ -1,0 +1,27 @@
+Dataset Description:
+The dataset used for this project is a breast cancer dataset that has been preprocessed and encoded for analysis. It contains multiple numerical features that represent various attributes of the cancer diagnosis, including characteristics like cell size, texture, and other morphological properties. The dataset was standardized before clustering to ensure all features contribute equally to distance calculations.
+
+Clustering Approach:
+To explore the dataset's natural groupings, we employed the K-Means clustering algorithm. Since clustering is an unsupervised learning technique, we removed the target variable before applying the algorithm. The Elbow Method was used to determine the optimal number of clusters (K), and we found that K=3 provided the best balance between inertia and interpretability.
+
+Evaluation Metrics:
+To assess the clustering performance, we used the Silhouette Score, which measures how well data points fit within their assigned clusters. Our model achieved a Silhouette Score of 0.403, indicating a moderate separation between clusters.
+
+Results and Interpretation:
+
+The K-Means clustering visualization showed three distinct groups with centroids marked in red.
+
+Feature distribution analysis using box plots after standardization revealed that certain features had varying ranges and required scaling.
+
+The clustering results helped identify potential patterns among patient data, which could be useful for further diagnostic insights.
+
+Best Model:
+
+The best-performing model was K-Means with K=3, as identified using the Elbow Method.
+
+The silhouette score of 0.403 suggests that while the clusters are distinguishable, there is some overlap, possibly due to the complex nature of the data.
+
+
+Conclusion:
+The clustering analysis successfully grouped the dataset into three meaningful clusters, providing insights into different patterns present in breast cancer attributes. Future improvements could involve testing different distance metrics or incorporating domain knowledge to refine cluster interpretation.
+
